@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Fortnite Mobile</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#222" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log('Service Worker Registered'))
+        .catch(err => console.error('Service Worker Error:', err));
+    }
+  </script>
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+  <div class="controls">
+    <div id="joystick"><div id="stick"></div></div>
+    <button id="shootBtn">🔫</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

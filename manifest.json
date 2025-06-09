@@ -1,0 +1,1 @@
+{"name": "Mini Fortnite Mobile", "short_name": "FortniteLite", "start_url": "./index.html", "display": "standalone", "background_color": "#222222", "theme_color": "#222222", "orientation": "portrait", "icons": [{"src": "icon.png", "sizes": "192x192", "type": "image/png"}]}
